@@ -1,13 +1,139 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+body{
+    background-color:white;
+    font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar{
+    display:none;
+}
+
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+nav{
+    box-shadow: 0 4px 10px 2px rgb(0, 0, 0, .1);
+    color:rgb(58, 58, 58);
+    padding:5px;
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    align-items: center;
+    height:30px;
+}
+
+.nav--logo{
+    width:25px;
+}
+
+.nav--title{
+    font-size:14pt;
+}
+
+.card--list{
+    display:flex;
+    flex-direction: column;
+    padding-top:50px;
+    padding-bottom:50px;
+    gap:25px;
+}
+
+.card{
+    display:flex;
+    justify-content: start;
+    margin:auto;
+    border-radius: 15px;
+    width:600px;
+    height:150px;
+    background-color: white;
+    border-color:#D2B998;
+    border-style:solid;
+    border-width: .25px;
+}
+
+.card--pic{
+    width:150px;
+    border-radius: 10px 0 0 10px;
+}
+.card--attr{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+
+
+.card--header{
+    font-family: 'Roboto Slab', serif;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size:8pt;
+    color:white;
+    width:100%;
+    height:20px;
+    margin-top:15px;
+}
+
+.card--location{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:5px;
+    background-color:#754840;
+    width:100%;
+    height: 100%;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:20px;
+
+}
+.card--dates{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    justify-content: right;
+    background-color:#C05F44;
+    width:60%;
+    height: 100%;
+    text-align:right;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:20px;
+}
+
+.card--icon{
+    height:15px;
+}
+
+.card--title{
+    font-size:20px;
+    font-family: 'Roboto Slab', serif;
+    margin-top:25px;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.card-desc{
+    margin-top:10px;
+    font-size:10pt;
+    font-weight: 300;
+    margin-left:25px;
+    padding-right:25px;
+    line-height: 14px;
+}
+
+.hr{
+    width:100%;
+    height:2px;
+    background-color:grey;
 }
